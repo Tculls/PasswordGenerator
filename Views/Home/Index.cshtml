@@ -1,0 +1,10 @@
+﻿
+<div class="text-center">
+    <h1>Random passcode</h1>
+    <h4>@Context.Session.GetString("Passcode")</h4>
+    <p>Passcode COUNT : @Context.Session.GetInt32("PasscodeCount")</p>
+<form asp-action="Generate" asp-controller="Home" method="POST">
+    <button type="submit">Generate</button>
+</form>
+    
+</div>
